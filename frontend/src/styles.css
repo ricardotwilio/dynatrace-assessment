@@ -1,0 +1,48 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+}
+
+.stock,
+.cart {
+  min-width: 300px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+ul {
+  padding: 0;
+}
+
+.item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 10px;
+  border: 1px dashed silver;
+  background-color: #f0f0f0;
+  line-height: 20px;
+  margin: 5px;
+}
+
+.item button {
+  margin-top: 5px;
+  align-self: center;
+}
+
+.item span:first-child {
+  text-decoration: underline;
+}
+
+.item span:nth-child(2) {
+  font-size: 12px;
+}
+
+.item span:nth-child(3) {
+  font-size: 11px;
+  font-weight: bold;
+}

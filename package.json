@@ -1,0 +1,33 @@
+{
+  "name": "marketplace",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:ui": "cd frontend && npm run dev",
+    "dev:api": "cd api && npm run dev",
+    "dev:start": "concurrently \"npm run dev:ui\" \"npm run dev:api\"",
+    "build:ui": "cd frontend && npm run build",
+    "lint:ui": "cd frontend && npm run lint",
+    "preview:ui": "cd preview && npm run dev"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^9.0.0",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1"
+  }
+}
